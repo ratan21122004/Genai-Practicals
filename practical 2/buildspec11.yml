@@ -1,0 +1,15 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      python: 3.11
+    commands:
+      - pip install -r requirements11.txt
+  build:
+    commands:
+      - python train11.py
+
+artifacts:
+  files:
+    - telecom_tower_model.pkl
